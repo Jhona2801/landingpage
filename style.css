@@ -1,22 +1,33 @@
 * {
     background-color: hsl(195, 96%, 11%);
+    margin-top: 0px;
 }
-
+/* font for nav bar */
 @font-face {
     src: url(./assets/fonts/PermanentMarker-Regular.ttf);
     font-family: permanentmarker;
 }
-
+/* makes all the links to change the pointer when hover the mouse */
+a {
+    cursor: pointer;
+}
+/* delete the points in the list */
 .navbar ul {
     list-style-type: none;
-    padding: 0px;
     margin: 0px;
+    padding: 20px;
+}
+
+.navbar img {
+    width: 150px;
+    height: 150px;
+    padding-top: 0px;
+    margin-top: 0px;
 }
 
 .navbar a {
     text-decoration: none;
     color: antiquewhite;
-    padding: 15px;
     padding-left: 65px;
     display: block;
     float: left;
@@ -24,12 +35,18 @@
     font-size: 20px;
 }
 
-.signin a {
+/* style of button */
+.signin button {
     float: inline-end;
     margin-right: 65px;
-}
-
-.signin button {
+    font-size: 20px;
+    color: antiquewhite;
+    font-family: permanentmarker;
+    background-color: rgb(204, 115, 226);
+    border-radius: 50px;
+    width: 150px;
+    cursor: pointer;
+    margin-top: -15px;
 }
 
 
