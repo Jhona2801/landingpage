@@ -1,0 +1,36 @@
+* {
+    background-color: hsl(195, 96%, 11%);
+}
+
+@font-face {
+    src: url(./assets/fonts/PermanentMarker-Regular.ttf);
+    font-family: permanentmarker;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: antiquewhite;
+    padding: 15px;
+    padding-left: 65px;
+    display: block;
+    float: left;
+    font-family: permanentmarker;
+    font-size: 20px;
+}
+
+.signin a {
+    float: inline-end;
+    margin-right: 65px;
+}
+
+.signin button {
+}
+
+
+
