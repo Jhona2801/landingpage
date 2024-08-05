@@ -9,16 +9,36 @@
     <link rel="icon" type="image/png" href="./assets/icons/PRO.png">
 </head>
 <body>
-        <nav class="navbar">
-            <a href=""><img src="./assets/icons/PRO.png" alt=""></a>
+    <!-- navigation bar -->
+    <nav class="navbar">
+        <a href=""><img src="./assets/icons/PRO.png" alt=""></a>
             <ul>
-                
-                <li><a href="">Catalogo</a></li>
-                <li><a href="">Ofertas</a></li>
+                <li><a href="">Inicio</a></li>
+                <li><a href="">Productos</a></li>
+                <li><a href="">Nosotros</a></li>
                 <li><a href="">Contacto</a></li>
             </ul>            
-        </nav>
-        <div class="signin"><a href=""><button>Sign in</button></a></div>
+    </nav>
+    <!-- sign in button -->
+    <div class="signin">
+        <a href=""><button>Sign in</button></a>
+    </div><br>
+    <!-- Jumbotron -->
+     <div class="jumbotroncontainer">
+        <div class="jumbotrontext"><h1>Tu seguridad es primero</h1><br>
+        <p>Si estas interesado en tu seguridad y bienestar, acercate a nosotros, cascos certificados con envios a todo el pais.</p><br>
 
+        <form action="index.php" method="post">
+            <label for="email">Correo electronico</label><br>
+            <input type="email" id="email" placeholder="abc@gmail.com">
+            <input type="submit">
+        </form>
+
+        </div>
+
+        <div class="jumbotronimage"><img src="./assets/img/jumbotron.jpg" alt=""></div>
+
+
+     </div>
 </body>
 </html>

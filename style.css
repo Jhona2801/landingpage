@@ -1,11 +1,20 @@
 * {
-    background-color: hsl(195, 96%, 11%);
+        background-color: hsl(195, 96%, 11%);
     margin-top: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 /* font for nav bar */
 @font-face {
     src: url(./assets/fonts/PermanentMarker-Regular.ttf);
     font-family: permanentmarker;
+}
+@font-face {
+    src: url(./assets/fonts/EduAUVICWANTHand-Regular.ttf);
+    font-family: eduaustralia;
+}
+    src: url(./assets/fonts/EduAUVICWANTHand-Regular.ttf);
+    font-family: eduaustralia;
 }
 /* makes all the links to change the pointer when hover the mouse */
 a {
@@ -17,14 +26,14 @@ a {
     margin: 0px;
     padding: 20px;
 }
-
+/* logo style */
 .navbar img {
     width: 150px;
     height: 150px;
     padding-top: 0px;
     margin-top: 0px;
 }
-
+/* font and styles of the nav menu left part */
 .navbar a {
     text-decoration: none;
     color: antiquewhite;
@@ -49,5 +58,62 @@ a {
     margin-top: -15px;
 }
 
+/* jumbotron styles */
+.jumbotroncontainer {
+    margin-top: 100px;
+}
 
+.jumbotrontext {
+    margin-top: 50px;
+    width: 30%;
+    height: 500px;
+    float: inline-end;
+}
+
+.jumbotrontext h1 {
+    font-family: eduaustralia;
+    color: rgb(255, 166, 166);
+    text-align: center;
+    font-size: 40px;
+}
+
+.jumbotrontext p {
+    text-align: center;
+    color: antiquewhite;
+    font-family: eduaustralia;
+    font-size: 20px;
+}
+
+.jumbotrontext form {
+    text-align: center;
+    color: antiquewhite;
+    font-family: eduaustralia;
+}
+
+.jumbotrontext input[type=email] {
+    width: 300px;
+    height: 35px;
+    background-color: rgb(244, 241, 245);
+    border-radius: 5px;
+}
+
+.jumbotrontext input[type=submit] {
+    width: 70px;
+    height: 35px;
+    background-color: rgb(204, 115, 226);
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(226, 215, 215);
+    border-radius: 10px;
+}
+
+.jumbotrontext ::placeholder {
+    text-align: center;
+    color: rgb(25, 24, 24);
+}
+
+.jumbotroncontainer img {
+    width: 70%;
+    height: 500px;
+    float: inline-start;
+}
 
