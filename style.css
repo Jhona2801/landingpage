@@ -117,3 +117,55 @@ a {
     float: inline-start;
 }
 
+.blog {
+    margin-top: 5px;
+    width: 100%;
+    height: 500px;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.blog article {
+   width: 33.3%;
+}
+
+.blog .certificacion video{
+    width: 90%;
+    height: 400px;
+    align-items: center;
+    margin-left: 28px;
+}
+
+.blog .certificacion p {
+    color: aliceblue;
+    font-family: eduaustralia;
+    text-align: center;
+    font-size: 20px;
+}
+
+.blog .tipos_casco video{
+    width: 90%;
+    height: 400px;
+    align-items: center;
+    margin-left: 28px;
+}
+
+.blog .tipos_casco p {
+    color: aliceblue;
+    font-family: eduaustralia;
+    text-align: center;
+    font-size: 20px;
+}
+
+.blog .imgcasco img {
+    width: 100%;
+    height: 400px;
+}
+
+.blog .imgcasco p {
+    color: aliceblue;
+    font-family: eduaustralia;
+    text-align: center;
+    font-size: 20px;
+}
+
