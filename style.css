@@ -38,7 +38,7 @@ a {
     text-decoration: none;
     color: antiquewhite;
     padding-left: 65px;
-    display: block;
+    display: flex;
     float: left;
     font-family: permanentmarker;
     font-size: 20px;
@@ -195,14 +195,67 @@ a {
     font-size: 20px;
 }
 
-footer {
-    margin-top: 100px;
-    background-color: azure;
-    text-align: center;
-    padding: 25px;
+.additional_container{
+    margin-top: 80px;
+    width: 100%;
+    height: 500px;
+    border: 1px solid;
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 
-footer h1 {
-    background-color: aqua;
+.additional_text {
+    background-color: rgb(113, 113, 113);
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
 }
 
+.additional_container article :first-child{
+    font-style: bold;
+    font-style: italic;
+}
+
+.additional_container h1{
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgb(113, 113, 113);
+    font-size: 50px;
+    text-align: end;
+}
+
+.additional_container p{
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+    text-align: end;
+    background-color: rgb(113, 113, 113);
+    color: hsl(240, 2%, 11%);
+}
+
+.contactus {
+    margin-top: 50px;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(113, 113, 113);
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+
+.contactus a{
+    padding: 12px 20px;
+    height: 60px;
+    width: 200px;
+    border-radius: 7px;
+    text-decoration: none;
+    background-color: rgb(115, 38, 5);
+    color: black;
+    font-size: 15px;
+}
+
+.additional_text svg{
+    background-color: rgb(115, 38, 5);
+    width: 30px;
+    height: 20px;
+}
