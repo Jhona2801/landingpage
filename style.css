@@ -1,5 +1,5 @@
 * {
-    background-color: hsl(195, 96%, 12%);
+    background-color: rgb(113, 113, 113);
     margin-top: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -20,68 +20,101 @@
 a {
     cursor: pointer;
 }
+
+.navbar {
+    width: 100%;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+}
+
+.navbar .logo {
+    width: 100%;
+    height: 100%;
+    padding-top: 0px;
+    margin-top: 0px;
+    grid-column-start: 1;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+}
+
 /* delete the points in the list */
 .navbar ul {
     list-style-type: none;
     margin: 0px;
-    padding: 20px;
+    grid-column-start: 2;
+    height: 100%;
+    width: 100%;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
 }
-/* logo style */
-.navbar img {
-    width: 150px;
-    height: 150px;
-    padding-top: 0px;
-    margin-top: 0px;
-}
+
 /* font and styles of the nav menu left part */
 .navbar a {
     text-decoration: none;
     color: antiquewhite;
     padding-left: 65px;
-    display: flex;
-    float: left;
-    font-family: permanentmarker;
+    font-family:monospace;
     font-size: 20px;
 }
 
+.navbar .signin {
+    list-style-type: none;
+    margin: 0px;
+    grid-column-start: 3;
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+}
 /* style of button */
 .signin button {
-    float: inline-end;
-    margin-right: 65px;
     font-size: 20px;
     color: antiquewhite;
-    font-family: permanentmarker;
+    font-family: monospace;
     background-color: rgb(204, 115, 226);
     border-radius: 50px;
     width: 150px;
     cursor: pointer;
-    margin-top: -15px;
+
 }
 
 /* jumbotron styles */
 .jumbotroncontainer {
-    margin-top: 150px;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height: 600px;
+    gap: 10px;
 }
 
 .jumbotrontext {
-    margin-top: 60px;
-    width: 30%;
-    height: 600px;
-    float: inline-end;
-    margin-right: 25px;
+    grid-column-start: 1;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
 }
 
 .jumbotrontext h1 {
-    font-family: eduaustralia;
+    font-family:Arial Narrow Bold, sans-serif;
     color: rgb(255, 166, 166);
     text-align: center;
     font-size: 40px;
+    align-content: end;
 }
 
 .jumbotrontext p {
+    margin-left: 20px;
+    align-content: center;
     text-align: center;
     color: antiquewhite;
-    font-family: eduaustralia;
+    font-family: monospace;
     font-size: 20px;
 }
 
@@ -112,13 +145,22 @@ a {
     color: rgb(25, 24, 24);
 }
 
-.jumbotroncontainer img {
-    width: 1300px;
-    height: 600px;
-    float: inline-start;
+.jumbotronimage {
+    grid-column-start: 2;
+    max-width: 100%;
+    max-height: 100%;
+    
+}
+
+.jumbotronimage img {
+    width: 100%;
+    max-height: 600px;
+    justify-content: center;
+    align-items: center;
 }
 
 .textblog {
+    margin-top: 30px;
     display: block;
     clear: both;
     width: 100%;
@@ -126,15 +168,15 @@ a {
 }
 
 .textblog h1 {
-    font-family: permanentmarker;
+    font-style: italic;
     font-size: 60px;
     color: hwb(179 78% 6% / 0.959);
 }
 
 .textblog p {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: monospace;font-style: oblique;
     font-size: 30px;
-    color: hwb(59 59% 5% / 0.89);
+    color: hwb(60 1% 94% / 0.968);
 }
 
 .blog {
@@ -159,10 +201,10 @@ a {
 .blog .certificacion p {
     margin: 15px 15px;
     padding: 15px 15px;
-    color: rgb(170, 173, 177);
-    font-family: eduaustralia;
+    color: rgb(255, 255, 157);
+    font-family: monospace;
     text-align: center;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .blog .tipos_casco video{
@@ -175,10 +217,10 @@ a {
 .blog .tipos_casco p {
     margin: 15px 15px;
     padding: 15px 15px;
-    color: rgb(170, 173, 177);
-    font-family: eduaustralia;
+    color: rgb(255, 255, 157);
+    font-family: monospace;
     text-align: center;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .blog .imgcasco img {
@@ -189,17 +231,16 @@ a {
 .blog .imgcasco p {
     margin: 15px 15px;
     padding: 15px 15px;
-    color: rgb(170, 173, 177);
-    font-family: eduaustralia;
+    color: rgb(255, 255, 157);
+    font-family: monospace;
     text-align: center;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .additional_container{
     margin-top: 80px;
     width: 100%;
     height: 500px;
-    border: 1px solid;
     display: grid;
     grid-template-columns: 50% 50%;
 }
@@ -258,4 +299,56 @@ a {
     background-color: rgb(115, 38, 5);
     width: 30px;
     height: 20px;
+}
+
+.additional_container img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.footer_up {
+    border-top: 1px solid gray;
+    margin: auto;
+    margin-top: 100px;
+    padding-top: 10px;
+    height: 200px;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer_up a{
+    text-decoration: none;
+    color: rgba(30, 29, 29, 0.822);
+}
+
+.footer_up ul {
+    list-style: none;
+}
+
+.footer_up li {
+    padding: 5px;
+    font-family: monospace;
+}
+
+
+.social_media {
+
+}
+
+.container_footer1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.container_footer2 {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.footer_down {
+    margin-top: 15px;
+    border-top: 1px solid rgb(96, 96, 96);
+    text-align: center;
 }
